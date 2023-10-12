@@ -646,12 +646,7 @@ magicSet=false
    tileSet=false
  if(document.getElementById("til").value=='true')
     {tileSet=true}
-realSet=false
- if(document.getElementById("rea").value=='true')
-    {reaSet=true} 
-alcSet=false
- if(document.getElementById("alc").value=='true')
-    {alcSet=true}
+
  
  ct1.drawImage(waiting, 0,0,100,100,0,0,70,70);
  if(document.getElementById("qual").value==".5"){leoWait=40, dims=512}
@@ -681,7 +676,6 @@ if(document.getElementById("qual").value=="3" ){leoWait=50, dims=1536}
   init_generation_image_id: img2img,
   tiling: tileSet,                      
   promptMagic: magicSet,
-  alchemy: alcSet,
   scheduler: "LEONARDO", num_inference_steps: 30, sd_version: 'v2'})
 };
 leo=""
