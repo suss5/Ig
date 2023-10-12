@@ -163,7 +163,6 @@
             <option value=".5">Small</option>
             <option value="1">Medium</option>  
             <option value="2">Large</option>
-            <option value="3">1536</option>
           </select>
       </div>
       <div class="checkbox">
@@ -652,7 +651,6 @@ magicSet=false
  if(document.getElementById("qual").value==".5"){leoWait=40, dims=512}
  if(document.getElementById("qual").value=="1" ){leoWait=45, dims=768}
  if(document.getElementById("qual").value=="2" ){leoWait=50, dims=1024}
-if(document.getElementById("qual").value=="3" ){leoWait=50, dims=1536}
  img2img=""
  if(document.getElementById("im2").value=="1"){img2img=retId1; img5.src=retURL}
  if(document.getElementById("im2").value=="2"){img2img=retId2; img5.src=retURL2}  
@@ -701,9 +699,6 @@ function leoTimer(){
  ct1.fillRect(Math.random()*size,Math.random()*size,3,3) }
   if(leoTime<leoWait+10*reWait){ct1.fillRect(0,.7*size,.004*leoTime*size,.2*size); leoTime++;setTimeout(leoTimer,100);return}
 
-   
- if(alcSet==true){
- ct1.fillRect(Math.random()*size,Math.random()*size,3,3) }
   if(leoTime<leoWait+10*reWait){ct1.fillRect(0,.7*size,.004*leoTime*size,.2*size); leoTime++;setTimeout(leoTimer,100);return}
   
   secondAPI()
